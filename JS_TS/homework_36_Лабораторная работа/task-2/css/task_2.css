@@ -1,0 +1,44 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 450px;
+    margin-left: 35%;
+    margin-right: 50%;
+}
+
+.tabs {
+    font-size: 0px;
+}
+
+.item {
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    background-color: violet;
+    border: 1px solid violet;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.item.active {
+    background-color: skyblue;
+    border-bottom: 1px solid skyblue;
+    border: 1px solid skyblue;
+}
+
+.content {
+    height: 500px;
+}
+
+.content-item {
+    display: none;
+    height: 100%;
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.content-item.active {
+    display: block;
+}
