@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0 auto;
+}
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+
+.promo_img {
+    position: relative;
+    width: 100%;
+}
+
+.promo_title {
+    position: absolute;
+    top: 50%;
+    left: 21%;
+    text-align: center;
+    color: white;
+}
+
+.promo_logo {
+    position: absolute;
+    z-index: 5;
+    height: 23px;
+    width: 101px;
+    left: 47%;
+    top: 40px;
+    border-radius: 0px;
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-shadow: #000 0px 0px 0px;
+}
+
+.header {
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_logo {
+    display: inline-block;
+}
+
+.nav {
+    display: flex;
+    width: 410px;
+    justify-content: space-between;
+}
+
+.nav_link:hover {
+    color: #00A4E5;
+}
+
+.nav_link:nth-child(2) {
+    color: #00A4E5;
+}
+
+.nav_link {
+    color: #48555B;
+    transition: all 0.4s;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+}
+
+.block_our_story {
+    border-top: #E6E6E6 solid 1px;
+}
+
+.title_our_story {
+    text-align: center;
+    margin-top: 57px;
+    margin-bottom: 80px;
+    color: #48555B;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title_our_story::after {
+    content: url(Line.png);
+    display: flex;
+    justify-content: center;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block_text_promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 42%;
+    height: 280px;
+}
+
+.block_text:first-child {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #48555B;
+    width: 99%;
+}
+
+.block_text_span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #00A4E5;
+}
+
+.block_text:last-child {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #48555B;
+    margin: 0 auto;
+    font-weight: normal;
+}
+
+.block_tools_img {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.tool_img {
+    margin-left: 20px;
+    height: 220px;
+    box-shadow: 0px 1px 4px 1px #48555B;
+}
+
+.tool_text {
+    position: absolute;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0px;
+}
+
+.tool_text:nth-child(1n) {
+    top: 18%;
+    left: 8%;
+}
+
+
+.tool_text:nth-child(2) {
+    top: 18%;
+    left: 41%;
+}
+
+.tool_text:nth-child(3n) {
+    top: 18%;
+    left: 75%;
+}
+
+.capabilites {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 40px;
+}
+
+.capa:first-child {
+    color: #48555B;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+.capa_title::after {
+    content: url(Line.png);
+    display: flex;
+}
+
+.capa:nth-child(2) {
+    max-width: 390px;
+    padding-left: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #48555B;
+    font-weight: bolder;
+}
+
+.capa:last-child {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #00A4E5;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0px;
+    font-weight: bolder;
+}

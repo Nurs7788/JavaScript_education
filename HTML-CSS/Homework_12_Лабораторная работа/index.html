@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="scss/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>LAB</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <div class="logo_block">
+        <a class="navbar-brand" href="#"><img src="img/xbox.png" alt=""></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav justify-content-between w-50">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Games <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Consoles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Community</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-success icon_link" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="nav_link_color">My XBOX</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active position-relative">
+        <img class="d-block w-100" src="img/Star-Wars-Battlefront-II-combat.png" alt="First slide">
+        <div
+          class="carousel-caption d-flex container flex-column justify-content-center align-items-end position-absolute">
+          <div class="content_block d-flex flex-column align-items-start">
+            <h5 class="carousel_title_">Star Wars</h5>
+            <p class="carousel_text">Battlefront II</p>
+            <div class="carousel_button">
+              <button type="button" class="btn btn-secondary btn_block bg_green">Watch Trailer</button>
+              <button type="button" class="btn btn-secondary btn_block">Explore Games</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item position-relative">
+        <img class="d-block w-100" src="img/Star-Wars-Battlefront-II-combat.png" alt="Second slide">
+        <div
+          class="carousel-caption d-flex container flex-column justify-content-center align-items-end position-absolute">
+          <div class="content_block d-flex flex-column align-items-start">
+            <h5 class="carousel_title_">Star Wars</h5>
+            <p class="carousel_text">Battlefront II</p>
+            <div class="btns">
+              <button type="button" class="btn btn-secondary btn_block bg_green">Watch Trailer</button>
+              <button type="button" class="btn btn-secondary btn_block">Explore Games</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item position-relative">
+        <img class="d-block w-100" src="img/Star-Wars-Battlefront-II-combat.png" alt="Third slide">
+        <div
+          class="carousel-caption d-flex container flex-column justify-content-center align-items-end position-absolute">
+          <div class="content_block d-flex flex-column align-items-start">
+            <h5 class="carousel_title_">Star Wars</h5>
+            <p class="carousel_text">Battlefront II</p>
+            <div class="btns">
+              <button type="button" class="btn btn-secondary btn_block bg_green">Watch Trailer</button>
+              <button type="button" class="btn btn-secondary btn_block">Explore Games</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="bg_tools bg-dark text-white">
+    <div class="container">
+      <div class="tools_title d-flex flex-column align-items-center pt-5 pb-5 text-center">
+        <span class="xbox_icon"></span>
+        <h1>The best value</h1>
+        <h2>in games and entertainment</h2>
+      </div>
+      <div
+        class="row justify-content-center justify-content-md-center justify-content-sm-center justify-content-lg-between justify-content-xl-between">
+        <div
+          class="card col-8 col-sm-7 col-md-5 col-lg-3 p-0 align-items-center bg-light mb-5 mb-sm-5 m-md-3 card_border">
+          <div class="img_block d-flex align-items-center w-100">
+            <img class="card-img-top w-100 h-100" src="img/xboxone.png" alt="Card image cap">
+          </div>
+          <div class="card-body bg-white w-100 d-flex flex-column">
+            <h5 class="card-title text-secondary tool_title">XBOX ONE X</h5>
+            <p class="card-text text-secondary tool_txt">Faster Processing Smoother Gameplay</p>
+            <a href="#" class="btn bg_green">Explore Consoles & Accessories</a>
+          </div>
+        </div>
+        <div
+          class="card col-8 col-sm-7 col-md-5 col-lg-3 p-0 align-items-center bg-light mb-5 mb-sm-5 m-md-3 card_border">
+          <div class="img_block d-flex align-items-center">
+            <img class="card-img-top" src="img/mixer-logo.png" alt="Card image cap">
+          </div>
+          <div class="card-body bg-white w-100 d-flex flex-column">
+            <h5 class="card-title text-secondary tool_title">mixer Streaming</h5>
+            <p class="card-text text-secondary tool_txt">The Next Generation Of Life Game Streaming</p>
+            <a href="#" class="btn bg_green p-lg-3">Start Watching mixer</a>
+          </div>
+        </div>
+        <div
+          class="card col-8 col-sm-7 col-md-7 col-lg-3 p-0 align-items-center bg-light mb-5 mb-sm-5 m-md-3 card_border">
+          <div class="img_block d-flex align-items-center">
+            <img class="card-img-top" src="img/gamewithgold.png" alt="Card image cap">
+          </div>
+          <div class="card-body bg-white w-100 d-flex flex-column">
+            <h5 class="card-title text-secondary tool_title">Free Games Every Month</h5>
+            <p class="card-text text-secondary tool_txt">Get up to $700 in free games</p>
+            <a href="#" class="btn bg_green p-lg-3 mt-lg-1">Get Free Games</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg_xbox img_pos_rel">
+    <img src="img/Rectangle.png" alt="xbox" class="w-100 h-100">
+    <div
+      class="card_pos_abs d-flex align-items-center container justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-start">
+      <div class="card card_bg">
+        <div class="card-body text-white text-md-center text-lg-left">
+          <h5 class="card-title card_title">Xbox Design Lab</h5>
+          <p class="card-text card_text">Make yours one in a billion with new colors, <br> metallic finishes and
+            rubberized grips.</p>
+          <a href="#" class="btn btn-secondary xbox_btn p-2 p-md-3 p-lg-3 p-xl-3 mb-4">Design Yours</a>
+          <a href="#" class="btn bg_green xbox_btn p-2 p-md-3 p-lg-3 p-xl-3 mb-4">Explore Consoles & Accessories</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer bg-dark">
+    <div class="container">
+      <div
+        class="row justify-content-center justify-content-md-center justify-content-sm-center justify-content-lg-between justify-content-xl-between pt-5">
+        <div
+          class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex flex-column align-items-sm-center align-items-md-start align-items-lg-start align-items-xl-start align-items-center">
+          <h3 class="footer_title">XBOX</h3>
+          <nav
+            class="nav d-flex flex-column align-items-sm-center align-items-md-start align-items-lg-start align-items-xl-start align-items-center">
+            <a href="#" class="nav_link mt-4 text-white">Support</a>
+            <a href="#" class="nav_link mt-4 text-white">Contact us</a>
+            <a href="#" class="nav_link mt-4 text-white">Privacy & cookies </a>
+            <a href="#" class="nav_link mt-4 mb-5 text-white">Terms of use </a>
+          </nav>
+        </div>
+        <div
+          class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex flex-column align-items-sm-center align-items-md-start align-items-lg-start align-items-xl-start align-items-center">
+          <h3 class="footer_title">Developers</h3>
+          <nav
+            class="nav d-flex flex-column align-items-sm-center align-items-md-start align-items-lg-start align-items-xl-start align-items-center">
+            <a href="#" class="nav_link mt-4 text-white">Games</a>
+            <a href="#" class="nav_link mt-4 text-white">Windows 10</a>
+            <a href="#" class="nav_link mt-4 text-white">Creators Program</a>
+            <a href="#" class="nav_link mt-4 mb-5 text-white">Designed for XBOX</a>
+          </nav>
+        </div>
+        <div
+          class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex flex-sm-column align-items-sm-center align-items-md-start align-items-lg-start align-items-xl-start align-items-center flex-column mb-5">
+          <h3 class="footer_title">Follow Us</h3>
+          <nav class="nav justify-content-between w-50">
+            <a href="#" class="nav_link mt-4 text-white"><img src="img/Faacebook.png" alt="facebook"></a>
+            <a href="#" class="nav_link mt-4 text-white"><img src="img/Twitter.png" alt="twitter"></a>
+            <a href="#" class="nav_link mt-4 text-white"><img src="img/Instagram.png" alt="insta"></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <hr>
+      <div class="footer_text text-white pb-5">
+        <h3 class="footer_text">English (United States)</h3>
+        <h3 class="footer_text"> © Microsoft 2017</h3>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jQuery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

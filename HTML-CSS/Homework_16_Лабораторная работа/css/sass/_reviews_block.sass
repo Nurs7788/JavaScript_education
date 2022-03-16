@@ -1,0 +1,32 @@
+.reviews_content_block 
+    padding-top: 5%
+    & h3 
+        margin-bottom: 5%
+    & button
+        margin-top: 5%
+        margin-bottom: 3%
+        border: 1px solid #333333
+        background: none
+        padding: 10px 70px
+        box-sizing: border-box
+        color: rgba(51, 51, 51, 1)
+    
+.reviews_grid_container
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-auto-rows: 1fr
+    gap: 30px
+
+.review_block h3, span, a
+    color: rgba(51, 51, 51, 1)
+
+.review_block span
+    display: block
+    margin-bottom: 5%
+    &::after
+        content: ""
+        background: url("../../img/starz.png") center center no-repeat
+        padding: 10px 50px
+
+.review_block a:hover
+    color: rgba(51, 51, 51, 1)

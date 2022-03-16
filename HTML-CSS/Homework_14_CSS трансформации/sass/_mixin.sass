@@ -1,0 +1,46 @@
+=logo($pading, $border)
+    display: inline-block
+    padding: $pading
+    border: $border
+    border-radius: 50%
+
+=title($color)
+    color: $color
+    font-size: $font-size-promo-title
+    font-weight: 800
+    line-height: 26px
+    letter-spacing: 6px
+    margin: 0
+    padding-top: 20%
+
+=list_title($color)
+    font-size: $font-size-promo-text
+    color: $color
+    font-weight: 500
+    line-height: 40px
+
+=list_text($color)
+    font-size: $font-size-list-text
+    color: $color
+    font-weight: 400
+    line-height: 26px
+
+=text($color)
+    color: $color
+    font-size: $font-size-promo-text
+    font-weight: 500
+    line-height: 40px
+
+=icon($bg-img)
+    padding: 15px
+    background-image: $bg-img
+    background-position: center center
+    background-repeat: no-repeat
+
+=tablet_landsapce
+    @media screen and ( max-width: 900px  )
+        @content
+        
+=mobile_landsapce
+    @media screen and ( max-width: 600px  )
+        @content

@@ -1,0 +1,222 @@
+body {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 1110px;
+  margin-left: 130px;
+}
+
+table, td, th, tr {
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 1%;
+  table-layout: fixed;
+}
+
+.block_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #195abb;
+  width: 100%;
+  max-width: 100px;
+  height: 100%;
+  position: fixed;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.slide_bar_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70%;
+}
+
+.slide_bar_block tbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slide_icon {
+  padding: 5px 10px;
+}
+
+.home_icon {
+  background: url("../img/home_24px.png") center center no-repeat;
+}
+
+.phone_icon {
+  background: url("../img/phone_24px.png") center center no-repeat;
+}
+
+.doc_icon {
+  background: url("../img/document_24px.png") center center no-repeat;
+}
+
+.card_icon {
+  background: url("../img/card_24px.png") center center no-repeat;
+}
+
+.shop_icon {
+  background: url("../img/shoping_24px.png") center center no-repeat;
+}
+
+.users_icon {
+  background: url("../img/customers_24px.png") center center no-repeat;
+}
+
+.vector_icon {
+  background: url("../img/consumptions_24px.png") center center no-repeat;
+}
+
+.ticket_icon {
+  background: url("../img/tickets_24px.png") center center no-repeat;
+}
+
+.setting_icon {
+  background: url("../img/gear_24px.png") center center no-repeat;
+}
+
+.block_btn button {
+  background: url("../img/menu_close.png") center center no-repeat;
+  background-color: #195abb;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 15%;
+}
+
+.block_btn button:hover {
+  border-color: #4e4e4e;
+}
+
+.table_main_block {
+  width: 100%;
+}
+
+.table_main_block h1 {
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.table_block {
+  width: 100%;
+  text-align: left;
+}
+
+.table_block td {
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+td {
+  max-width: 170px;
+  overflow: hidden;
+}
+
+.thead_title {
+  text-align: left;
+  background-color: #195abb;
+  padding: 1.5%;
+  text-transform: uppercase;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.table_bg {
+  background: #f8f9ff;
+}
+
+.table_bg th {
+  color: #221a44;
+}
+
+.table_bg th:last-child {
+  text-align: center;
+}
+
+.table_bg th:first-child {
+  color: #49388c;
+}
+
+.table_bg td {
+  color: #4e4e4e;
+}
+
+.table_bg button {
+  color: #4e4e4e;
+  padding: 10px;
+  margin: 4px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10%;
+}
+
+.table_bg button:hover {
+  border-color: #195abb;
+}
+
+.icon_drop::after {
+  content: "";
+  background: url("../img/Vector_down.png") center center no-repeat;
+  padding: 5px;
+  margin-left: 20%;
+}
+
+.icon_drop::before {
+  content: "";
+  background: url("../img/Vector_up.png") center center no-repeat;
+  padding: 5px;
+  position: absolute;
+  left: 188px;
+  top: 142px;
+}
+
+.icon_user {
+  background: url("../img/table_profile.png") center center no-repeat;
+}
+
+.border_header {
+  border-bottom: 1px solid rgba(25, 90, 187, 0.5);
+}
+
+.border_body {
+  border-bottom: 1px solid #d6d5d5;
+}
+
+.table_footer {
+  text-align: right;
+}
+
+.table_footer td {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */

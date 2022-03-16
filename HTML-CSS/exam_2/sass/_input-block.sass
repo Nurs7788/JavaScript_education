@@ -1,0 +1,49 @@
+.input-block
+    background: rgba(255, 245, 218, 1)
+    min-height: 440px
+
+.form-content-text
+    text-align: center
+    & h1 
+        font-size: 36px
+        font-weight: 600
+        line-height: 49px
+        color: rgba(50, 50, 50, 1)
+        +mobile_landsapce
+            font-size: 26px
+    & p 
+        font-size: 29px
+        font-weight: 400
+        line-height: 40px
+        color: rgba(100, 100, 100, 1)
+        +mobile_landsapce
+            font-size: 19px
+
+.input-group
+    padding: 20px
+    background-color: #fff
+    border: 1px solid rgba(0, 0, 0, 1)
+    & input
+        border: none
+    &::before
+        content: ""
+        background: url("../img/flag.jpg") center center no-repeat
+        padding: 20px
+        margin-right: 5px
+
+.btn_input
+    border-radius: 0px
+    border: none
+    width: 150px
+    height: 60px
+    font-size: 29px
+    font-weight: 400
+    line-height: 40px
+    color: #000
+    margin-left: 5px
+    +mobile_landsapce
+        width: 70px
+        height: 60px
+        font-size: 16px
+        font-weight: 800
+

@@ -1,0 +1,142 @@
+.promo_title
+    margin-top: 15%
+    text-align: center
+    & h2
+        font-size: 30px
+        font-weight: 600
+    
+.grid_promo
+    margin-top: 10%
+    
+.promo_content_block
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-auto-rows: 1fr 1fr
+    gap: 50px
+
+.decimal_ul
+    counter-reset: section
+
+.decimal
+    list-style-type: none
+    position: relative
+    left: 90px
+    max-width: 80%
+    &::before
+        position: absolute
+        left: -90px
+        background-image: none
+        counter-increment: section
+        content: "0 " counters(section,"")
+        color: rgba(51, 51, 51, 1)
+        font-weight: bold
+        font-size: 1.5rem
+        padding: 0
+        font-size: 50px
+        font-weight: 300
+        line-height: 61px
+        box-shadow: 1px 1px 1px 1px #FECC00
+
+.promo_content
+    & h3 
+        font-size: 20px
+        font-weight: 500
+    & p 
+        font-size: 16px
+        font-weight: 400
+
+.grid_promo_cost
+    display: grid
+    grid-template-areas: "cost_title" "grid_cost_card"
+    margin-top: 10%
+
+.cost_title
+    grid-area: cost_title
+    text-align: center
+    margin-bottom: 5%
+
+.grid_cost_card
+    grid-area: grid_cost_card
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-auto-rows: 1fr
+    gap: 25px
+
+.card
+    display: flex
+    flex-direction: column
+    align-items: center
+    border: 1px solid rgba(235, 235, 235, 1)
+    padding: 10%
+    &:hover
+        border-color: rgba(254, 209, 0, 1)
+    & h2
+        font-size: 24px
+        font-weight: 600
+        margin-bottom: 15%
+    & p 
+        margin-top: 15%
+        margin-bottom: 15%
+        font-size: 30px
+        font-weight: 600
+    & button
+        border: none
+        background: rgba(254, 209, 0, 1)
+        padding: 10px 70px
+    &_inform
+        display: flex
+        flex-direction: column
+        align-items: center
+        & span 
+            margin-bottom: 15%
+
+.grid_promo_inform
+    display: grid
+    grid-template-columns: 1fr
+    grid-auto-rows: 200px 200px 1fr
+
+.promo_inform_title
+    text-align: center
+    margin-top: 10%
+
+.promo_choice_btn
+    text-align: center
+    margin-top: 8%
+    & button
+        border: 1px solid rgba(235, 235, 235, 1)
+        padding: 10px 70px
+        background-color: #fff
+        margin-left: 5px
+        margin-right: 5px
+        &:hover
+            border: 1px solid rgba(254, 209, 0, 1)
+
+.promo_inform_content
+    display: grid
+    grid-template-columns: 1fr 2fr
+    grid-auto-rows: 1fr
+    gap: 100px
+
+.inform_sidebar
+    display: flex
+    flex-direction: column
+    & ul
+        margin-top: 5%
+        margin-bottom: 5%
+        padding-left: 20px
+        & li 
+            margin-bottom: 7%
+            list-style-type: none
+            position: relative
+            &::before
+                content: ""
+                background: url("../../img/checkIcon.png") center center no-repeat
+                padding: 10px
+                position: absolute
+                left: -20px
+    &_button button 
+        border: none
+        background: rgba(254, 209, 0, 1)
+        padding: 10px 70px
+
+

@@ -1,0 +1,42 @@
+.img_pos_rel
+    position: relative
+
+.card_pos_abs
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+
+.card_bg
+    background: none
+    border: none
+
+.btn_bg_color
+    background-color: $bg_color_green
+    color: #fff
+
+.card-body
+    +tablet_landsapce
+        display: flex
+        flex-direction: column
+        align-items: center 
+        justify-content: center
+        text-align: center
+    +mobile_landsapce
+        display: flex
+        flex-direction: column
+        align-items: center 
+        text-align: center
+
+.xbox_btn
+    font-size: $font_size_small
+    
+.card_title
+    font-size: $font_size_large
+    +mobile_landsapce
+        font-size: $font_size_bold_medium
+.card_text
+    font-size: $font_size_medium
+    +mobile_landsapce
+        font-size: $font_size_small

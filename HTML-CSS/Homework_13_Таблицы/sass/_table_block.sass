@@ -1,0 +1,75 @@
+.table_main_block
+    width: 100%
+    & h1  
+        font-weight: 300
+        font-size: 32px
+
+.table_block
+    width: 100%
+    text-align: left
+    & td 
+        width: 100px
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+td
+    max-width: 170px
+    text-overflow:         
+    overflow: hidden
+
+.thead_title
+    text-align: left
+    background-color: $color_blue
+    padding: 1.5%
+    text-transform: uppercase
+    color: $color_white
+    border-top-left-radius: 10px
+    border-top-right-radius: 10px
+
+.table_bg
+    background: $bg_color_white
+    & th 
+        color: $color_dark_violet
+    & th:last-child
+        text-align: center
+    & th:first-child
+        color: $color_light_violet
+    & td 
+        color: $color_gray
+    & button 
+        color: $color_gray
+        padding: 10px
+        margin: 4px
+        border: 1px solid $color_border_gray
+        border-radius: 10%
+        &:hover
+            border-color: $color_border_blue
+
+.icon_drop::after
+    content: ""
+    +icon_slide_bar("../img/Vector_down.png")
+    padding: 5px
+    margin-left: 20%
+
+.icon_drop::before
+    content: ""
+    +icon_slide_bar("../img/Vector_up.png")
+    padding: 5px
+    position: absolute
+    left: 188px
+    top: 142px
+
+.icon_user
+    +icon_slide_bar("../img/table_profile.png")
+
+.border_header
+    border-bottom: 1px solid rgba(25, 90, 187, 0.5)
+
+.border_body
+    border-bottom: 1px solid rgba(214, 213, 213, 1)
+    
+.table_footer
+    text-align: right
+    & td 
+        border-bottom-left-radius: 10px
+        border-bottom-right-radius: 10px

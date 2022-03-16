@@ -1,0 +1,195 @@
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial;
+    padding: 40px;
+}
+
+.nav a {
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+}
+
+.header_logo {
+    width: 212px;
+    height: 45px;
+}
+
+.promo_block {
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./charity-images/image.jpg);
+    padding: 175px;
+}
+
+.promo_block p {
+    font-family: Arial;
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.promo_block span {
+    font-family: Arial;
+    font-size: 24px;
+    color: white;
+    line-height: 38px;
+}
+
+.charity_block {
+    display: flex;
+    align-items: stretch;
+}
+
+.block_charity {
+    background-color: #f1efec;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block_charity img {
+    width: 277px;
+    height: 59px;
+}
+
+.imagies {
+    display: flex;
+    align-items: stretch;
+}
+
+.block_donate {
+    background-color: #9b242d;
+    font-size: 40px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.block_donate a {
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}
+
+.block_donate p {
+    text-decoration: none;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.logo {
+    width: 277px;
+    height: 59px;
+    background-color: #f1efec;
+}
+
+.sign_up {
+    display: flex;
+    align-items: stretch;
+}
+
+.block_sign_up {
+    background-color: #46a651;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 70px;
+    font-family: arial;
+    color: white;
+}
+
+.block_sign_up p {
+    font-size: 40px;
+    font-family: arial;
+}
+
+.block_sign_up span {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    font-family: arial;
+}
+
+.block_sign_up a {
+    font-family: arial;
+    display: inline-block;
+    background-color: #348e3e;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.imagies_sign_up img {
+    width: 335px;
+    display: flex;
+    align-items: stretch;
+}
+
+.block_facebook {
+    display: flex;
+    align-items: stretch;
+}
+
+
+.facebook {
+    background-color: #3b5997;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook a {
+    font-family: arial;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.imagies_facebook img{
+    width: 689px;
+    display: flex;
+    align-items: stretch;
+}
+
+footer {
+    display: flex;
+    padding: 40px;
+    background-color: #373838;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+footer a {
+    font-family: arial;
+    color: #939393;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 22px;
+}

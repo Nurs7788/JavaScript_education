@@ -1,0 +1,76 @@
+.list
+    display: flex
+    justify-content: space-between
+    padding: 0
+    padding-bottom: 20%
+    margin: 0
+    +mobile_landsapce
+        flex-direction: column
+
+    &_block 
+        display: inline-block
+        border: 1px solid rgba(246, 16, 103, 0.5)
+        padding: 3%
+        margin: 1%
+        +mobile_landsapce
+            margin: 0
+            margin-bottom: 5%
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+
+
+    &_block::before
+        content: ""
+        background: url("../img/Vector.png") center center no-repeat
+        +logo(10%, 1px solid rgba(246, 16, 103, 0.5))
+
+    &_block:first-child 
+        margin-left: 0
+
+    &_block:last-child
+        margin-right: 0
+
+    &_block_title
+        +list_title($color-text)
+
+    &_block_text
+        +list_text($color-text)
+    
+.purple_title
+    +list_title(white)
+
+.purple_text
+    +list_text(white)
+
+.icon
+    display: inline-block
+    &:hover
+        background: rgba(246, 16, 103, 1)
+        &::before
+             color: #fff
+
+    &::before
+        content: ""
+        background: url("../img/Icon.png") center center no-repeat
+        +logo(20%, none)  
+     
+.decimal_ul
+    counter-reset: section
+
+.decimal
+    list-style-type: none
+    &::before
+        background-image: none
+        counter-increment: section
+        content: "0 " counters(section,"")
+        color: $color-title
+        font-weight: bold
+        font-size: 1.5rem
+        padding: 0
+
+
+
+
+

@@ -1,0 +1,86 @@
+.footer
+    display: grid
+    grid-template-columns: 1fr
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+    +tablet_landsapce
+        display: flex
+        flex-direction: column
+    &-title
+        border-top: 1px solid rgba(255, 255, 255, 0.16)
+        +tablet_landsapce
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 15px 0
+    &-title h3
+        font-size: 24px
+        font-weight: 600
+        line-height: 33px
+        color: #fff
+        +tablet_landsapce
+            font-size: 50px
+.nav
+    padding-top: 2%
+    padding-bottom: 2%
+    +tablet_landsapce
+        flex-direction: column
+        min-height: 700px
+        border-top: 1px solid rgba(255, 255, 255, 0.16)
+    &_link
+        color: rgba(229, 229, 229, 1)
+        font-family: 'Roboto', sans-serif
+        font-size: 16px
+        font-weight: 400
+        line-height: 19px
+        +tablet_landsapce
+            font-size: 23px
+    &_link:hover
+        color: #7FFF00
+    &-title
+        color: rgba(229, 229, 229, 1)
+        font-family: 'Roboto', sans-serif
+        font-size: 20px
+        font-weight: 400
+        line-height: 23px
+        +tablet_landsapce
+            font-size: 40px
+    &:first-child
+        margin-top: 5%
+    &_social
+        border-top: 1px solid rgba(255, 255, 255, 0.16)
+        +tablet_landsapce
+            min-height: 300px
+            flex-direction: column
+    &_social .nav_link
+        font-family: 'Roboto', sans-serif
+        font-size: 11px
+        font-weight: 400
+        line-height: 13px
+        +tablet_landsapce
+            font-size: 17px
+        +mobile_landsapce
+            font-size: 15px
+
+.nav_social_img:first-child
+    +tablet_landsapce
+        margin-right: 10px
+
+.link-block
+    +tablet_landsapce
+        flex-direction: column
+        align-items: center
+        min-height: 500px
+
+.class-w-50
+    width: 50%
+    +tablet_landsapce   
+        min-height: 250px
+        width: 100%
+
+.title-block
+    +tablet_landsapce
+        display: flex
+        flex-direction: column
+        align-items: center
+
+

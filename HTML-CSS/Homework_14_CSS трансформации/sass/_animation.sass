@@ -1,0 +1,41 @@
+@keyframes title_impuls
+    from
+        transform: translateX(-20px) 
+    50%
+        transform: translateX(20px)
+    to 
+        transform: translateX(-20px)     
+
+@keyframes icon_impuls
+    from
+        transform: scale(-1, -1) 
+    50%
+        transform: scale(1, 1)
+    to 
+        transform: scale(-1, -1)      
+
+@keyframes text_impuls
+    from
+        color: rgb(random(255), random(255), random(255))
+        transform: rotate(0deg)
+    25%
+        color: rgb(random(255), random(255), random(255))
+        transform: rotate(5deg)
+    50%
+        color: rgb(random(255), random(255), random(255))
+        transform: rotate(-5deg)
+    to
+        color: rgb(random(255), random(255), random(255))
+        transform: rotate(0deg)
+
+@keyframes footer_txt_impuls
+    from
+        transform: translateY(0)
+    25%
+        transform: translateY(-40px)
+    50%
+        transform: translateY(0)
+    75%
+        transform: translateY(-20px)
+    to
+        transform: translateY(0)        

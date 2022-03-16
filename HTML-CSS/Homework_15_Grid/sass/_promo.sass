@@ -1,0 +1,32 @@
+.bg-promo
+    background: url("../img/bg-promo.png") center center/cover no-repeat
+    min-height: 500px
+    width: 100%
+    display: flex
+    align-items: center
+    +mobile_landsapce
+        margin-top: 300px
+
+.promo_block
+    display: flex
+    +tablet_landsapce
+        justify-content: center
+        text-align: center
+    & h1
+        font-size: 44px
+        +mobile_landsapce
+            font-size: 24px
+    & p
+        font-size: 18px
+        width: 70%
+        +mobile_landsapce
+            font-size: 15px
+
+.promo__text
+    display: flex
+    flex-direction: column
+    width: 45%
+    color: #fff
+    +tablet_landsapce
+        width: 70%
+        align-items: center

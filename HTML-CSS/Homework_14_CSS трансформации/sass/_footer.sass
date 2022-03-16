@@ -1,0 +1,82 @@
+.footer
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 100px
+    &_text
+        color: #fff
+        width: 15%
+        transition: all 1s linear
+        &:hover
+            transform: rotate(360deg)
+            transform-origin: 50% 50%
+
+        +mobile_landsapce
+            width: 100%
+            text-align: center
+    &_txt
+        color: #fff
+        display: flex
+        justify-content: center
+        margin-top: 6rem
+        padding: 5rem
+        animation: footer_txt_impuls 4s infinite 
+    +mobile_landsapce
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+.nav
+    display: flex
+    flex-direction: column
+    &:last-child
+        width: 25%
+    &_link
+        text-decoration: none
+        color: #fff
+        font-size: 13px
+        line-height: 28px
+        letter-spacing: 1px
+        transition: all 1s linear
+        &:hover
+            transform: scale(1.5)
+    &_title
+        color: #fff
+        transition: all 1s ease-out
+        &:hover
+            transform: rotate(360deg)
+        &::after
+            content: ""
+            +icon(url("../img/Rectangle.png"))
+            background-position: left
+            padding: 2px
+            margin-top: 5px
+            display: flex
+    +mobile_landsapce
+        align-items: center
+
+
+.icons
+    display: flex
+    justify-content: space-between
+
+.twitter
+    +icon(url("../img/Vector_twt.png"))
+
+.facebook
+    +icon(url("../img/Vector_fcb.png"))
+
+.insta
+    +icon(url("../img/Vector_inst.png"))
+
+.youtube
+    +icon(url("../img/Vector_yotb.png"))
+
+.m_icon
+    +icon(url("../img/Vector_m.png"))
+
+.letter
+    +icon(url("../img/Vector_letter.png"))
+    
+.phone
+    +icon(url("../img/Vector_phone.png"))
+

@@ -1,0 +1,24 @@
+body {
+    background: url(1616530346_36-p-chisto-chernii-fon-40.png); 
+}
+
+.centremainh {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+.centretwo {
+    color: green;
+    text-align: center;
+    font-size: 40px;
+}
+.divone {
+    color:pink;
+    text-align: center;
+    font-size: 35px;
+}
+.spanclass {
+    font-size: 40px;
+    color: yellow;
+}
+

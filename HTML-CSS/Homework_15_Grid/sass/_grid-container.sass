@@ -1,0 +1,196 @@
+.grid-container
+    display: grid
+    grid-template-columns: 3fr 1fr
+    grid-auto-rows: 1fr 5fr 1fr 
+    column-gap: 70px
+    +mobile_landsapce
+        grid-template-areas: "item_navigation" "items"
+        grid-template-columns: 1fr
+
+.item__information
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 50px 0
+    +min_mobile_landsapce
+        flex-direction: column
+
+.btn__inform:first-child
+    background: url("../img/bullet-list-69.png") center center no-repeat
+    padding: 15px
+    border: none
+.btn__inform:last-child
+    background: url("../img/grid-interface.png") center center no-repeat
+    padding: 15px
+    border: none
+
+.block-text-inform
+    display: flex
+    flex-direction: row
+    width: 50%
+    justify-content: space-between 
+    align-items: center
+    & p
+        color: rgba(47, 47, 47, 1)
+        font-size: 14px
+    +tablet_landsapce
+        width: 70%
+    +mobile_landsapce
+        width: 75%
+.text_inform_nav
+    display: flex
+    align-items: center
+    width: 30%
+    justify-content: space-between
+    & a, p
+        color: rgba(47, 47, 47, 1)
+        font-size: 14px
+
+.items
+    +mobile_landsapce
+        grid-area: items
+
+.block__items
+    display: grid
+    gap: 10px
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr
+    +mobile_landsapce
+        grid-template-columns: 1fr 1fr
+    +min_mobile_landsapce
+        grid-template-columns: 1fr 
+
+.card
+    position: relative
+    border-radius: 10px
+    min-height: 300px
+    & img
+        height: 100%
+        width: 100%
+        object-fit: cover
+        border-radius: 10px
+    &__title
+        position: absolute
+        top: 0
+        right: 0
+        margin: 0
+        padding: 7px 15px
+        background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)
+        border-bottom-left-radius: 10px
+        border-top-right-radius: 10px
+        color: #fff
+        & h1
+            font-size: 14px
+            margin: 0
+    &__text
+        position: absolute
+        bottom: 0
+        right: 0
+        left: 0
+        margin: 0
+        background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)
+        border-bottom-left-radius: 5px
+        border-bottom-right-radius: 5px
+        color: #fff
+        max-height: 60px
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        & p 
+            padding-left: 30px
+            font-size: 14px
+            +tablet_landsapce
+                padding-left: 15px
+                font-size: 10px
+            +mobile_landsapce
+                padding-left: 20px
+                font-size: 14px
+
+.block__items__navigation
+    margin-top: 50px
+    & .btn__nav
+        padding: 20px
+        border-radius: 100px
+        background-color: #fff
+        border: 1px solid rgba(224, 224, 224, 1)
+        margin-right: 10px
+        font-size: 14px
+        &:hover
+            border-color: #FFC000
+        &:last-child
+            padding: 20px 40px
+            margin-right: 0
+            +mobile_landsapce
+                padding: 10px 10px
+        +mobile_landsapce
+                padding: 10px
+    +mobile_landsapce
+        text-align: center
+        margin-bottom: 50px
+
+.bnt_text_nav
+    font-size: 11px
+    &:hover
+        color: #fff
+
+.item_navigation
+    margin-top: 60px
+    & h2
+        margin: 0
+        color: rgba(92, 92, 92, 1)
+        font-size: 18px
+    +mobile_landsapce
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-evenly
+        grid-area: item_navigation
+    +min_mobile_landsapce
+        margin-top: 0
+        margin-bottom: -40px
+
+.item__nav
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+    height: 30%
+    margin-top: 50px
+    margin-bottom: 50px
+    &_link
+        color: rgba(92, 92, 92, 1)
+        font-size: 14px
+    +mobile_landsapce
+        align-items: center
+        height: 40%
+        margin-top: 25px
+
+.btn__nav
+    padding: 12px 10px
+    border: 1px solid rgba(92, 92, 92, 1)
+    border-radius: 100px
+    background-color: #fff
+    margin-right: 5px
+    margin-top: 30px
+    margin-bottom: 30px
+    color: rgba(83, 83, 83, 1)
+    +mobile_landsapce
+        margin: 0
+    & span
+        font-size: 11px
+        color: rgba(92, 92, 92, 1)
+    &:hover
+        border-color: #FFC000
+        background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)
+        color: #fff
+        
+.filter
+    padding: 20px 60px
+    background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)
+    box-shadow: 0px 12px 35px 0px rgba(160, 121, 0, 0.2)
+    border-radius: 100px
+    border: none
+    color: #fff
+    font-size: 14px
+

@@ -1,0 +1,160 @@
+* {
+    font-family: arial, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 998px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #424242;
+}
+
+.header span {
+    text-decoration: none;
+    font-size: 37px;
+    color: #424242;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.promo {
+    background: url(task/main-pic.jpg) center center/100% no-repeat;
+    min-height: 600px;
+    display: flex;
+}
+
+.flex_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+.promo_title {
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.promo_text {
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.promo_link {
+    font-size: 23px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #f8cd53;
+    padding: 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.flex_container a {
+    text-decoration: none;
+}
+
+.main {
+    padding-top: 90px;
+    padding-bottom: 140px;
+}
+
+.about_title {
+    text-align: center;
+    font-size: 36px;
+    color: #424242;
+    font-weight: bold;
+}
+
+.about {
+    line-height: 0;
+    padding-bottom: 60px;
+}
+
+.about_text {
+    text-align: center;
+    font-size: 20px;
+    color: #424242;
+    font-weight: bold;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+    max-width: 33%;
+}
+
+.items {
+    display: flex;
+    text-align: center;
+    align-items: flex-start;
+}
+
+.item_title {
+    font-size: 22px;
+    color: #424242;
+    font-weight: bold;
+}
+
+.item_text {
+    font-size: 13px;
+    color: #5c5c5c;
+    font-weight: normal;
+    max-width: 85%;
+}
+
+.item_icon {
+    display: inline-block;
+    width: 88px;
+    height: 88px;
+    background: center center/100% no-repeat;
+}
+
+.facebook {
+    background-image: url(task/ic-hand.png);
+}
+
+.book {
+    background-image: url(task/ic-book.png);
+}
+
+.message {
+    background-image: url(task/ic-comment.png);
+}
+
+.footer {
+    background-color: #515151;
+    display: flex;
+    padding: 20px;
+}
+
+.footer_text {
+    text-align: right;
+    font-size: 14px;
+    color: #cecece;
+    font-weight: normal;
+}

@@ -1,0 +1,99 @@
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 115px
+    width: 100%
+    +tablet_landsapce
+        flex-direction: column
+        margin-top: 25px
+        margin-bottom: 70px
+
+.nav
+    width: 70%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    +tablet_landsapce
+        width: 100%
+        flex-direction: column
+    &-link-block
+        width: 60%
+        display: flex
+        justify-content: space-between
+        +tablet_landsapce
+            margin-bottom: 25px
+            margin-top: 25px
+        +mobile_landsapce
+            flex-direction: column
+            align-items: center
+    &-btn-block
+        display: flex
+        +tablet_landsapce
+            width: 50%
+            justify-content: space-between
+        +mobile_landsapce
+            width: 70%
+    &__icon
+        +mobile_landsapce
+            margin-top: 20px
+    &__link__icon
+        background: url("../img/logo-icon.png") center center no-repeat
+        padding: 25px
+        position: relative
+        &::after
+            content: "12"
+            font-size: 10px
+            padding: 2px
+            border: 1px solid
+            border-radius: 50%
+            position: absolute
+            top: 10px
+            right: 0
+            background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)
+            border: none
+            color: #fff
+    &__link
+        position: relative
+        background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        font-size: 15px
+        font-family: 'Roboto', sans-serif
+        &::after
+            content: " "
+            position: absolute
+            bottom: 0
+            display: block
+            width: 40%
+            height: 3px
+            background-color: transparent
+            border-radius: 10px
+            left: 50%
+            transform: translate(-50%)
+        &:hover:after
+            background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)
+        +mobile_landsapce
+            margin-top: 20px
+    &__link:first-child
+        font-weight: bold
+        
+    
+.btn__link
+    display: inline-block
+    width: 130px
+    height: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #fff
+    background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%)
+    border-radius: 100px
+    box-shadow: 0px 12px 35px 0px rgba(160, 121, 0, 0.2)
+    font-size: 14px
+    font-family: 'Roboto', sans-serif
+    +mobile_landsapce
+        font-size: 12px
+    &:last-child
+        margin-left: 15px
+    

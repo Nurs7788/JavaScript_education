@@ -1,0 +1,106 @@
+.bg-footer
+    background: rgba(33, 33, 33, 1)
+    min-height: 310px
+    display: flex
+    align-items: center
+    
+.footer
+    display: flex
+    +tablet_landsapce
+        flex-direction: column
+        margin-top: 25px
+        margin-bottom: 25px
+    &__promo
+        display: flex
+        flex-direction: column
+        width: 80%
+        +tablet_landsapce
+            width: 100%
+            align-items: center
+    &__promo__nav
+        +tablet_landsapce
+            width: 70%
+            display: flex
+            justify-content: space-evenly
+            margin-bottom: 30px
+    &__text
+        width: 60%
+        margin: 25px 0
+        color: #fff
+        +tablet_landsapce
+            text-align: center
+        & p 
+            font-size: 14px
+            line-height: 17px
+    & .nav
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        color: #fff
+        & h2 
+            font-size: 15px
+        +tablet_landsapce
+            width: 100%
+            align-items: center
+            margin-bottom: 25px
+        &:last-child
+            justify-content: flex-end
+        &_social_link
+            padding: 15px
+        &_social_link:first-child
+            background: url("../img/1.png") center center no-repeat
+        &_social_link:nth-child(2)
+            background: url("../img/2.png") center center no-repeat
+        &_social_link:nth-child(3)
+            background: url("../img/3.png") center center no-repeat
+        &_social_link:last-child
+            background: url("../img/4.png") center center no-repeat
+    &_nav_link
+        color: #fff
+        font-size: 15px
+        +tablet_landsapce
+            margin-bottom: 20px
+    &_nav_term
+        color: #fff
+        font-size: 15px
+        +tablet_landsapce
+            margin-bottom: 15px
+            margin-top: 20px
+
+.bg-black-footer
+    background: rgba(0, 0, 0, 1)
+    min-height: 40px
+
+.footer__information
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: #fff
+    & p 
+        font-size: 12px
+    +tablet_landsapce
+        justify-content: space-around
+    +mobile_landsapce
+        flex-direction: column
+
+.policy__block
+    display: flex
+    align-items: center
+    width: 25%
+    justify-content: space-around
+    +mobile_landsapce
+        flex-direction: column
+
+.privacy__block
+    display: flex
+    align-items: center
+    justify-content: space-between
+    & .privacy
+        color: #fff
+        margin-left: 10px
+        font-size: 12px
+        &:hover
+            color: #FFC000
+            border-bottom: 1px solid #FFC000
+            
+            

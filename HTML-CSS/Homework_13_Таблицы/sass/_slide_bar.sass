@@ -1,0 +1,60 @@
+.slide_bar
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    background-color: $color_blue
+    width: 100%
+    max-width: 100px
+    height: 100%
+    position: fixed
+    border-top-right-radius: 10px
+    border-bottom-right-radius: 10px
+
+.slide_bar_block
+    display: flex
+    height: 70%
+    tbody
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+             
+.slide_icon
+    padding: 5px 10px
+
+.home_icon
+    +icon_slide_bar("../img/home_24px.png")
+
+.phone_icon
+    +icon_slide_bar("../img/phone_24px.png")
+
+.doc_icon
+    +icon_slide_bar("../img/document_24px.png")
+
+.card_icon
+    +icon_slide_bar("../img/card_24px.png")
+
+.shop_icon
+    +icon_slide_bar("../img/shoping_24px.png")
+
+.users_icon
+    +icon_slide_bar("../img/customers_24px.png")
+
+.vector_icon
+    +icon_slide_bar("../img/consumptions_24px.png")
+
+.ticket_icon
+    +icon_slide_bar("../img/tickets_24px.png")
+
+.setting_icon
+    +icon_slide_bar("../img/gear_24px.png")
+
+.block_btn
+    button
+        +icon_slide_bar("../img/menu_close.png")
+        background-color: $color_blue
+        padding: 20px
+        border: 1px solid #fff
+        border-radius: 15%
+        &:hover
+            border-color: $color_gray

@@ -1,0 +1,312 @@
+body {
+    margin: 0 auto;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    font-family: Helvetica;
+    font-style: normal;
+}
+
+.header {
+    background-color: #373A3C;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 460px;
+    justify-content: space-between;
+}
+
+.nav_link {
+    line-height: 16px;
+    font-size: 16px;
+    font-family: Helvetica;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: normal;
+}
+
+.games {
+    color: white;
+}
+
+.star_wars {
+    position: relative;
+    height: 700px;
+}
+
+.star_wars_img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.promo {
+    position: absolute;
+    right: 350px;
+    top: 210px;
+    z-index: 2;
+}
+
+.title {
+    color: white;
+    font-size: 36px;
+    font-family: Helvetica;
+    line-height: 15px;
+    font-style: normal;
+}
+
+.title_text {
+    color: white;
+    font-size: 24px;
+    font-family: Helvetica;
+    line-height: 0;
+    font-style: normal;
+}
+
+.block_bottom {
+    margin-top: 60px;
+}
+
+.bottom {
+    color: white;
+    padding: 15px 25px;
+    margin-right: 8px;
+    background-color: #8DD83D;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: Helvetica;
+    font-style: normal;
+}
+
+.gray {
+    background-color: #828282;
+}
+
+.promo_item {
+    background-color: grey;
+    width: 100%;
+    height: 870px;
+}
+
+.promo_item_img {
+    padding: 40px;
+    background: url(xboxicon.png) center center no-repeat;
+}
+
+.promo_item_text {
+    display: flex;
+    padding-top: 65px;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    line-height: 0;
+}
+
+.promo_title {
+    font-size: 48px;
+}
+
+.promo_title_text {
+    font-size: 36px;
+}
+
+.items {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 320px;
+    height: 180px;
+    border: solid 1px #8DD83D;
+    border-bottom: none;
+}
+
+.xbox {
+    background-color: #FAFAFA;
+}
+
+.xbox img {
+    width: 100%;
+}
+
+.mixer {
+    background-color: #FAFAFA;
+}
+
+.item_games {
+    background-color: #FAFAFA;
+}
+
+.items_text {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item_text {
+    padding-left: 25px;
+}
+
+.text h2 {
+    font-size: 18px;
+}
+
+.text p {
+    font-size: 24px;
+}
+
+.item_content {
+    width: 320px;
+    height: 235px;
+    background-color: white;
+    color: #435766;
+    border: solid #8DD83D 1px;
+    border-top: none;
+}
+
+.item_link {
+    padding: 15px;
+    background-color: #8DD83D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.xbox_gamepad {
+    position: relative;
+    height: 600px;
+}
+
+
+.xbox_gamepad img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.promo_xbox {
+    position: absolute;
+    top: 125px;
+    left: 290px;
+}
+
+.title_xbox {
+    color: white;
+    font-size: 48px;
+    font-style: normal;
+}
+
+.title_text_xbox {
+    color: white;
+    font-size: 24px;
+    font-style: normal;
+}
+
+.block_bottom_xbox {
+    margin-top: 60px;
+}
+
+.bottom_xbox {
+    color: white;
+    padding: 20px 20px;
+    margin-right: 8px;
+    background-color: #8DD83D;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: Helvetica;
+}
+
+.gray_xbox {
+    background-color: #828282;
+}
+
+.footer {
+    background-color: #373A3C;
+}
+
+.nav_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.nav_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_block a {
+    color: white;
+    padding-top: 35px;
+    font-size: 14px;
+}
+
+.nav_block_follow {
+    display: flex;
+    flex-direction: column;
+}
+
+.block_icon {
+    flex-grow: 4;
+}
+
+.nav_title {
+    color: #7DD42F;
+    flex-grow: 1;
+    font-size: 18px;
+}
+
+.icon {
+    background: no-repeat;
+    padding: 10px 25px;
+}
+
+.facebook {
+    background-image: url(Faacebook.png);
+}
+
+.twiter {
+    background-image: url(Twitter.png);
+}
+
+.insta {
+    background-image: url(Instagram.png);
+}
+
+.footer_block {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-top: rgba(255, 255, 255, 1) solid 1px;
+    font-size: 16px;
+    font-style: normal;
+}
