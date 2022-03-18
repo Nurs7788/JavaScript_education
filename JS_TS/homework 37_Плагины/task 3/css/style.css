@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 10px;
+}
+
+textarea {
+    flex-grow: 1;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    width: 25%;
+    padding: 10px;
+    cursor: pointer;
+}

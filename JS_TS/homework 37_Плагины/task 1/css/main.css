@@ -1,0 +1,511 @@
+body {
+    margin: 0 auto;
+}
+
+figure {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+#fig_text {
+    cursor: pointer;
+}
+
+.hero img {
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
+
+.promo {
+    clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+}
+
+.hero {
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    position: relative;
+    text-align: center;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btnAl_block {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.btnAl {
+    background-color: #3DD1E7;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+    font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 460px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btnAl:focus {
+    outline: 0;
+}
+
+.btnAl:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #000000;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
+
+.btnAl:hover:after {
+    bottom: 2px;
+    left: 2px;
+}
+
+@media (min-width: 768px) {
+    .btnAl {
+        padding: .75rem 3rem;
+        font-size: 1.25rem;
+    }
+}
+
+.hero h1 {
+    font-size: 70px;
+}
+
+.hero p {
+    font-size: 50px;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 0.5em;
+}
+
+.promo {
+    background: url(https://unsplash.it/1600/900?image=830) no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 50px 0;
+    overflow: hidden;
+    padding: 150px 20px;
+    position: relative;
+    text-align: center;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 0.5em;
+}
+
+
+.canvas {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: teal;
+    margin-bottom: 50px;
+}
+
+.emoji-wrap {
+    position: relative;
+}
+
+.emoji-wrap>svg {
+    stroke-width: 3px;
+    stroke: black;
+    fill: white;
+}
+
+.eggy {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.face {
+    width: 50px;
+    height: 50px;
+    background-color: #FDC912;
+    border: 3px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.face:before {
+    content: "";
+    display: block;
+    width: 47px;
+    height: 47px;
+    border-left: 3px solid #FFE62B;
+    border-bottom: 3px solid #FFE62B;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+
+.eyes {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eyes:before,
+.eyes:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.mouth {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid black;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    left: 2px;
+    top: -15px;
+}
+
+.mouth:before,
+.mouth:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 34px;
+    width: 5px;
+    height: 3px;
+    background-color: black;
+    border-radius: 1px;
+}
+
+.mouth:before {
+    transform: rotate(-45deg);
+    left: 3px;
+}
+
+.mouth:after {
+    transform: rotate(45deg);
+    left: 33px;
+}
+
+.hand {
+    width: 15px;
+    height: 3px;
+    border: 3px solid black;
+    position: absolute;
+    background: #FDC912;
+    border-radius: 5px;
+}
+
+.hand-left {
+    left: -19px;
+    top: 18px;
+    transform: rotate(-45deg);
+    transform-origin: top right;
+}
+
+.hand-right {
+    right: -18px;
+    top: 20px;
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+    animation-name: wave;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    10% {
+        transform: rotate(-55deg);
+    }
+
+    20% {
+        transform: rotate(-35deg);
+    }
+
+    30% {
+        transform: rotate(-55deg);
+    }
+
+    40% {
+        transform: rotate(-35deg);
+    }
+
+    50% {
+        transform: rotate(-45deg);
+    }
+}
+
+.hand-curved {
+    position: absolute;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.hand-curved svg {
+    fill: #FDC912;
+    stroke: black;
+    stroke-width: 3px;
+}
+
+.hand-curved-left {
+    top: 20px;
+    left: -10px;
+    transform-origin: top right;
+    animation-name: wave2;
+}
+
+.hand-curved-right {
+    top: 12px;
+    right: -10px;
+    transform-origin: bottom left;
+    animation-name: wave2;
+}
+
+.eggy2 .face {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wave2 {
+    0% {
+        transform: rotate(0) scaleY(1);
+    }
+
+    25% {
+        transform: rotate(30deg) scaleY(-1);
+    }
+
+    50% {
+        transform: rotate(0) scaleY(-1);
+    }
+
+    75% {
+        transform: rotate(-30deg) scaleY(1);
+    }
+
+    100% {
+        transform: rotate(0) scaleY(1);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.card-text {
+    font-size: 20px;
+}
+
+.btn_dis_cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.btn_dis {
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+
+.btn_dis:hover {
+    background: #03e9f4;
+    color: #189bcf;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.btn_dis:nth-child(1) {
+    filter: hue-rotate(270deg);
+}
+
+.btn_dis:nth-child(2) {
+    filter: hue-rotate(110deg);
+}
+
+.btn_dis span {
+    position: absolute;
+    display: block;
+}
+
+.btn_dis span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.btn_dis span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.btn_dis span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+
+.btn_dis span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
